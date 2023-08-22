@@ -1,4 +1,0 @@
-14: Longest Common Prefix
--start w/ the most basic base case (["a", "a", "a"])
--build the list of consecutive letters in common w/in the loop
--exit the loop as soon as there is a difference in the sequence of letters
