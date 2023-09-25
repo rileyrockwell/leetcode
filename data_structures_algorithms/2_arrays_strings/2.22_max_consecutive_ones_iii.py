@@ -7,6 +7,10 @@ def longestOnes(nums, k):
 	
 	Req: sliding window technique
 	"""
+	# what is the problem asking
+	# (1). understand the problem
+	# (2). construct a plan
+	
 
 
 

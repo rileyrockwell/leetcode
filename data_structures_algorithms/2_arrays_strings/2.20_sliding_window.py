@@ -1,5 +1,4 @@
 # 1. find_length(nums, k)
-
 def find_length_nums(nums, k):
 	left = curr = answer = 0
 
@@ -15,8 +14,10 @@ def find_length_nums(nums, k):
 	return answer
 
 
-# 2. find_length(s)
+print(find_length_nums([4, 2, 3], 3))
 
+
+# 2. find_length(s)
 def find_length(s):
 	left = curr = answer = 0
 	
@@ -35,7 +36,6 @@ def find_length(s):
 
 
 # 3. numSubarrayProductLessThanK(nums, k)
-
 def numSubarrayProductLessThanK(nums, k):
 	if k <= 1:
 		return 1
@@ -54,17 +54,23 @@ def numSubarrayProductLessThanK(nums, k):
 
 
 # 4. find_best_subarray(nums, k):
-
 def find_best_subarray(nums, k):
 	curr = 0
-	
+	for i in range(k):
+		curr += nums[i]
 
+	answer = curr
+	for i in range(k, len(nums)):
+		curr += nums[i] - nums[i - k]
+		answer = max(answer, curr)
+
+	return answer
 
 ###
 print(find_length_nums([0, 1, 2, 3], 4))
 print(find_length("11001011"))
 print(numSubarrayProductLessThanK([2, 4], 8))
-
+print(find_best_subarray([0, 1, 2, 3], 4))
 
 
 
@@ -80,10 +86,10 @@ print(numSubarrayProductLessThanK([2, 4], 8))
 # objective: find the number of subarrays s.t. the product of the elements in the subarray is < k.
 
 # (4). O(n) | O(1)
-# objective: ...
+# objective: you tell me...tell me the objective from looking at the code.
 
-### 	10:30		12:00
-# (1). 	0.35		...
+### 	10:30		11:30		12:00
+# (1). 	0.35		0.60
 # (2). 	0.20		...
 # (3). 	0.20		...
 # (4). 	0.10		...

@@ -1,5 +1,6 @@
 def find_best_subarray(nums, k):
 	curr_sum = 0
+
 	for i in range(k):
 		curr_sum += nums[i]
 
@@ -11,5 +12,8 @@ def find_best_subarray(nums, k):
 
 	return answer
 
-print(list(range(6)))
-print(find_best_subarray(list(range(6)), 4))
+nums = [i for i in range(6)]
+k = 4
+print(nums)
+print(k)
+print(find_best_subarray(nums, k))

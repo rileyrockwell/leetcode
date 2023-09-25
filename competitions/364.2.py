@@ -1,0 +1,4 @@
+def maxSumOfHeights(maxHeights):
+	
+
+print(maxSumOfHeights([3, 2, 5, 5, 2, 3]))
