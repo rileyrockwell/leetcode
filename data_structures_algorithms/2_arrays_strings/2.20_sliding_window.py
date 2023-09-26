@@ -73,8 +73,6 @@ print(numSubarrayProductLessThanK([2, 4], 8))
 print(find_best_subarray([0, 1, 2, 3], 4))
 
 
-
-
 ### 
 # (1). O(n) | O(1)
 # objective: find the length of the longest substring (window) with sum is <= k.
@@ -86,7 +84,7 @@ print(find_best_subarray([0, 1, 2, 3], 4))
 # objective: find the number of subarrays s.t. the product of the elements in the subarray is < k.
 
 # (4). O(n) | O(1)
-# objective: you tell me...tell me the objective from looking at the code.
+# objective: find the subarray with the largest sum whose length == k.
 
 ### 	10:30		11:30		12:00
 # (1). 	0.35		0.60
