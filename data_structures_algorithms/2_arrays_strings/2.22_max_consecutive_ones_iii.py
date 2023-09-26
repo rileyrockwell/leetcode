@@ -24,21 +24,6 @@ def longestOnes(nums, k):
 
 	# in each iteration of the loop, answer is the max of right - left, or answer.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 nums = [1,1,1,0,0,0,1,1,1,1,0]
 k = 2
 print(longestOnes(nums, k))
