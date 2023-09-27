@@ -5,10 +5,8 @@ def longestOnes(nums, k):
 	return: int
 	
 	objective: Given a binary array nums and an integer k, return the maximum number of
-	consecutive 1's in the array if you can flip at most k 0's.
+	consecutive "1" elements in the array if you can flip at most k "0" elements.
 	"""
-	# how to compare sum_i with sum_i+1
-
 	left = right = answer = 0
 
 	for right in range(len(nums)):
@@ -27,3 +25,6 @@ def longestOnes(nums, k):
 nums = [1,1,1,0,0,0,1,1,1,1,0]
 k = 2
 print(longestOnes(nums, k))
+
+# you could have been doing this at age 10. pick people that pick you. don't force things. let things unfold naturally.
+# let the unvierse drive and do 50% of the work. you still need to do the other 50% of the work.
