@@ -1,55 +1,38 @@
-# prefix sum
-
-nums = [i for i in range(6)]
-
-def testing_prefix_sum(nums):
-	
-
-print(testing_prefix_sum(nums))
-
-
-# prefix[j] - prefix[i - 1]
-
-# prefix[j] - prefix[i] + nums[i]
-
-
-
-# concepts
-# pre-processing
+nums = list(range(4))
 
 def answer_queries(nums, queries, limit):
-	# using prefix sum concept
-	# O(1)
-	prefix = [nums[0]]
-	for i in range(1, len(nums)):
-		prefix.append(nums[i] + prefix[-1])
+    prefix = [nums[0]]
+    for i in range(1, len(nums)):
+        prefix.append(nums[i] + prefix[-1])
+
+    return prefix
+    
+print(answer_queries(nums, 1, 1))
 
 
-	ans = []
-	for x, y in queries:
-		curr = prefix[y] - prefix[x] + nums[x]
-		ans.append(curr < limit)
 
-	return ans
+def answer_queries(nums, queries, limit):
+    prefix = [nums[0]]
+    for i in range(1, len(nums)):
+        prefix.append(nums[i] + prefix[-1])
+
+    ans = []
+    for x, y in queries:
+        curr_sum = prefix[y] - prefix[x] + nums[x]
+        ans.append(curr_sum < limit)
+
+    return ans
+
+nums = list(range(10))
+queries = [[0, 3], [1, 4], [2, 5], [3, 6]]
+limit = 7
+
+print(answer_queries(nums, queries, limit))
 
 
-a = [i for i in range(6)]
-b = [[0, 3], [1, 4], [2, 5]]
-c = 6
+nums = [1, 6, 3, 2, 7, 2]
+queries = [[0, 3], [2, 5], [2, 4], [0, 5]]
+limit = 13
 
-print(answer_queries(a, b, c))
+print(answer_queries(nums, queries, limit))
 
-
-def waysToSplitArray(nums):
-	prefix = [nums[0]]
-	for i in range(1, len(nums)):
-		prefix.append(nums[i] + prefix[-1])
-
-	# prefix sum array completed
-
-	# use the prefix sum to determine if splits are valid
-	ans = 0
-	for i in range(len(nums) - 1):
-		# b/c we have prefix[-1] => len(nums) - 1
-		left_section = prefix[i]
-		right_section = prefix[-1] - prefix[i]
