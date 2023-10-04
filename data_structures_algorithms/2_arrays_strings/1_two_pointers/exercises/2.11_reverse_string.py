@@ -33,5 +33,7 @@ print(reverseString(["a", "b"]))
 print(reverseString(["b", "a"]))
 
 print(reverseString(["h", "a", "n", "n", "a", "h"]))
+print(reverseString(["a", "n", "n", "a"]))
+print(reverseString(["a", "n", "n", "a", "!"]))
 
 print(reverseString(["a", "b", "c"]))

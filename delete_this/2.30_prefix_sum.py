@@ -35,4 +35,3 @@ queries = [[0, 3], [2, 5], [2, 4], [0, 5]]
 limit = 13
 
 print(answer_queries(nums, queries, limit))
-
