@@ -21,8 +21,6 @@ def check_if_palindrome(s):
 
 print(check_if_palindrome("able was i ere i saw elba"))
 print(check_if_palindrome("hannah"))
-
-
 def check_for_target(nums, target):
     """
     nums: list
