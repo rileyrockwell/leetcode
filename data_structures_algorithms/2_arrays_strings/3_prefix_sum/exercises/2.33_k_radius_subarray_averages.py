@@ -1,3 +1,5 @@
+# Collaborators: Discord
+
 def getAverages(nums, k):
 	ans = [-1]*len(nums)
 
@@ -30,3 +32,5 @@ def getAverages(nums, k):
 nums = [7, 4, 3, 9, 1, 8, 5, 2, 6]
 k = 3
 print(getAverages(nums, k))
+
+# keep writing. keep working. keep building. in the booth.
