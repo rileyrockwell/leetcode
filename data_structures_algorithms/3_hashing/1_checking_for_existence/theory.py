@@ -40,7 +40,7 @@ nums2 = [0, 1, 1]
 nums = list(range(6))
 nums1 = [5]*5
 nums2 = [i for i in range(10) if i % 2 == 0]
-
+print(nums2)
 
 # i have not been this energized since 5th grade.
 
