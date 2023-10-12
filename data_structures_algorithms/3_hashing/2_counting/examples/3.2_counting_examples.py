@@ -3,7 +3,9 @@ from collections import Counter
 
 class Solution:
 
+    # sliding window; use a hashmap to keep track of items in the window
     def find_longest_substring(self, s, k):
+        # map elements in s to their frequency
         counts = defaultdict(int)
         left = ans = 0
         for right in range(len(s)):
@@ -75,3 +77,5 @@ class Solution:
 
 if __name__ == "__main__":
     print(Solution().find_longest_substring("abc", 3))
+    print(Solution().areOccurrencesEqual("abacbc"))
+    
