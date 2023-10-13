@@ -4,7 +4,10 @@
 # 4. subarray_sum
 # 5. number_of_subarrays
 
-
+# 1. find_longest_substring
+def find_longest_substring(s):
+	# using hashmap in the sliding window
+	pass
 
 
 

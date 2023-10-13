@@ -1,32 +1,29 @@
 class Solution:
     def count_elements(self, arr: list[int]) -> int:
-        # x + 1 is also in array
-        # set of dictionary?
-        # map integer to frequecy of integer
-        # determine if, given integer, integer + 1 also exists.
-        dic = {}
         occurences = 0
+        dic = {}
 
-        # map, lambda
-
+        # build the dictionary
         for num in arr:
             if num not in dic:
                 dic[num] = 1
             else:
                 dic[num] += 1
 
-        # recall: sorted return a list of all key values in numeric order
+        keys_list = sorted(list(dic.keys()))
 
-        list_keys = sorted(dic)
-
-        # return list_keys
-    
-        for i in range(1, len(list_keys)):
-            # if, given x in arr, x + 1 is also in arr
-            if list_keys[i] - list_keys[i - 1] == 1:
-                occurences += 1
+        for index in range(1, len(keys_list)):
+            if keys_list[index] - keys_list[index - 1] == 1:
+                # if constraint is satisfied and there is a corresponding duplicate value
+                if dic[keys_list[index]] == dic[keys_list[index - 1]]:
+                    occurences += dic[keys_list[index]]
+                # if constraint is satisfied but there is no corresponding duplicate value, use the frequency of x (not x + 1)
+                else:
+                    occurences += dic[keys_list[index - 1]]
 
         return occurences
+
+
 
 
 
@@ -44,4 +41,10 @@ nums = [1, 1, 2, 2]
 print(Solution().count_elements(nums))
 
 nums = [1, 1, 2, 2, 3, 3]
+print(Solution().count_elements(nums))
+
+nums = [1, 1, 2, 2]
+print(Solution().count_elements(nums))
+
+nums = [1, 1, 2]
 print(Solution().count_elements(nums))
