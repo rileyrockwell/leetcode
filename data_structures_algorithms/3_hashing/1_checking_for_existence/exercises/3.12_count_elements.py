@@ -24,12 +24,8 @@ class Solution:
         return occurences
 
 
-
-
-
 nums = [1, 2, 3]
 print(Solution().count_elements(nums))
-
 
 nums = [1, 1, 3, 3, 5, 5, 7, 7]
 print(Solution().count_elements(nums))
