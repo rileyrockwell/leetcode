@@ -73,7 +73,7 @@ class Solution:
             counts[curr] += 1
 
         return ans
-
+        
 
 if __name__ == "__main__":
     print(Solution().find_longest_substring("abc", 3))
