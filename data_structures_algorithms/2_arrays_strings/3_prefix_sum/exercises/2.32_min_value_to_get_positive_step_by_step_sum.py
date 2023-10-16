@@ -22,5 +22,23 @@ def minStartValue(nums):
 
 	# return startValue
 
+def minStartValue(nums):
+	"""
+	return: minimum positive value of startValue, s.t. that step-by-step sum is never less than 1
+	
+	hint: find the minimum prefix sum
+	"""
+	n = len(nums)
+
+	return n
+
+
+
 nums = [-3, 2, -3, 4, 2]
+print(minStartValue(nums))
+
+nums = [1, 2]
+print(minStartValue(nums))
+
+nums = [1, -2, -3]
 print(minStartValue(nums))

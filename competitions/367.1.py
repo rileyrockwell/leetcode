@@ -38,12 +38,3 @@ nums = [1, 2, 3]
 indexDifference = 2
 valueDifference = 4
 print(Solution().findIndices(nums, indexDifference, valueDifference))
-
-# notes:
-# went well:
-# have fun (white claw + instrumental music, zero music w/ lyrics)
-# pen + paper, before touching sublime
-# clearly defined objective
-# zoned-in for 30 min, 5 min BREAK
-# strictly instrumental (frequency) music. learn from experience. please.
-# SO EXTREMELY PROUD OF YOU. EXCELLENT JOB TONIGHT!
