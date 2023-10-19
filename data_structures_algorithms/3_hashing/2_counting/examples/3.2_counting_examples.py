@@ -77,4 +77,4 @@ class Solution:
 
 if __name__ == "__main__":
     print(Solution().find_longest_substring("abc", 3))
-    print(Solution().areOccurrencesEqual("abacbc"))
+    print(Solution().areOccurrencesEqual("abacbc"))s

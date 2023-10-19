@@ -1,23 +1,20 @@
 class Solution:
     def missing_number(self, nums: list[int]) -> int:
         # given an array of integers, return the missing integer in the range.
-        a = len(nums)
-        b = [num for num in nums]
 
-        for num in range(a + 1):
-            if num not in b:
-                return num
+        # temp_set = {i for i in range(len(nums) + 1)}
 
+        # return list(temp_set - set(nums))[0]
 
+        # a = sum(list(range(len(nums) + 1)))
 
+        a = sum(range(len(nums) + 1))
 
-        
+        b = sum(nums)
 
-        
+        return a - b
 
-
-
-
+        # return sum([i for i in range(len(nums) + 1)]) - sum(nums)
 
 
 
