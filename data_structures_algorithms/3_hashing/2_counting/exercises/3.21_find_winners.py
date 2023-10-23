@@ -35,3 +35,6 @@ class Solution:
 
 matches = [[2,3],[1,3],[5,4],[6,4], [2,1], [1,4]]
 print(Solution().find_winners(matches))
+
+# same concept in different situations. do not try to rewrite or memorie 1 problem.
+# understand the underlying concept and paply the principles to  3-5 problems.

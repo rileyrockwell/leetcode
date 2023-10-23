@@ -1,5 +1,11 @@
 class Solution:
 	def dest_city(self, paths: [[str]]) -> str:
+		# in alphabetical order
+		# data structure to keep track of arrival and destination city
+		# paths[i].length == 2
+
+		# set or dictionary?
+
 		
 
 
