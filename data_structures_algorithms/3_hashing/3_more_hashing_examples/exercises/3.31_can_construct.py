@@ -1,5 +1,5 @@
 class Solution:
-	def can_construct(self, ransom_note: str, magazine: str) -> bool:
+	def canConstruct(self, ransom_note: str, magazine: str) -> bool:
 		# build the hashmap for ransom_note
 		ransom_note_dic = {}
 		magazine_dic = {}
@@ -28,16 +28,16 @@ class Solution:
 
 ransom_note = "a"
 magazine = "b"
-print(Solution().can_construct(ransom_note, magazine))
+print(Solution().canConstruct(ransom_note, magazine))
 
 ransom_note = "aa"
 magazine = "ab"
-print(Solution().can_construct(ransom_note, magazine))
+print(Solution().canConstruct(ransom_note, magazine))
 
 ransom_note = "aa"
 magazine = "aab"
-print(Solution().can_construct(ransom_note, magazine))
+print(Solution().canConstruct(ransom_note, magazine))
 
 ransom_note = "fihjjjjei"
 magazine = "hjibagacbhadfaefdjaeaebgi"
-print(Solution().can_construct(ransom_note, magazine))
+print(Solution().canConstruct(ransom_note, magazine))
