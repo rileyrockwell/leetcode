@@ -1,22 +1,29 @@
+from collections import Counter
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        # use a hashmap...
-        # use a set?
-        # check uniqueness among the next letter in the sequence
-        temp_list = [letter for letter in s]
+        # using a hashmap w/in the context of a sliding window
+        chars = Counter()
 
-        # HORRIBLE HABITS. DO NOT MAKE THE SITUATION WORSE. RECTIFY BAD HABITS.
-        sub_list = []
-        sub_set = set()
-        for letter in temp_list:
-            sub_list.append(letter)
-            sub_set.add(letter)
-            # duplicate exists
-            if len(sub_list) != len(sub_set):
-                return len(sub_set)
+        left = right = 0
 
-        # sliding window?
-        
+        result = 0
+
+        while right < len(s):
+            r = s[right]
+            chars[r] += 1
+
+            while chars[r] > 1:
+                l = s[left]
+                chars[l] -= 1
+                left += 1
+
+            result = max(result, right - left + 1)
+
+            right += 1
+
+        return result
+
 
 
 s = "abcabcbb"

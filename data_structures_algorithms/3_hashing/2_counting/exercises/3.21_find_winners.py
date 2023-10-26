@@ -3,10 +3,12 @@ class Solution:
         # using a hashmap (set or dict)
         # forget about using a hashmap w/in the context of a sliding window. complete the problem.
         # use a hashmap within the context of sliding window
-        pass
+        return 1
 
-class Solution: 
-    def find_winners(self, matches: [[int]]) -> [[int]]:
+
+# LeetCode Solution
+class Solution1: 
+    def find_winners1(self, matches: [[int]]) -> [[int]]:
 
         losses_count = {}
         
@@ -37,4 +39,4 @@ matches = [[2,3],[1,3],[5,4],[6,4], [2,1], [1,4]]
 print(Solution().find_winners(matches))
 
 # same concept in different situations. do not try to rewrite or memorie 1 problem.
-# understand the underlying concept and paply the principles to  3-5 problems.
+# understand the underlying concept and apply the principles to  3-5 problems.
