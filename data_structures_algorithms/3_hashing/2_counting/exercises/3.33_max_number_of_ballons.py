@@ -20,7 +20,7 @@ class Solution:
 		print(balloon)
 		percent_correct = 0
 
-		for char in text:
+		for char in range(len(text)):
 			if word[char] < 1:
 				return False
 			elif word[char] not in list(word.keys()):
@@ -36,6 +36,6 @@ class Solution:
 
 
 
-print(Solution().max_number_of_balloons("nlaebolko"))
+# print(Solution().max_number_of_balloons("nlaebolko"))
 
 print(Solution().max_number_of_balloons("loonbalxballpoon"))

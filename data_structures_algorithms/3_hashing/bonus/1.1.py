@@ -1,7 +1,6 @@
 class Solution:
 	def contains_duplicate(self, nums: [int]) -> bool:
 		temp_set = set(nums)
-
 		return len(nums) != len(temp_set)
 
 nums = [1, 2, 3, 1]

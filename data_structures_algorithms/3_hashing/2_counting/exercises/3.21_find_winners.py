@@ -1,34 +1,15 @@
 class Solution:
     def find_winners(self, matches: [[int]]) -> [[int]]:
-        # using a hashmap (set or dict)
-        # forget about using a hashmap w/in the context of a sliding window. complete the problem.
-        # use a hashmap within the context of sliding window
-        return 1
+        # hint: count the number of times each player loses while
+        # iterating through the matches
+        
+        
 
 
 # LeetCode Solution
 class Solution1: 
     def find_winners1(self, matches: [[int]]) -> [[int]]:
-
-        losses_count = {}
-        
-        for winner, loser in matches:
-            print(losses_count)
-            losses_count[winner] = losses_count.get(winner, 0)
-            print(losses_count)
-            
-            losses_count[loser] = losses_count.get(loser, 0) + 1
-
-        return losses_count
-
-        zero_lose, one_lose = [], []
-        for player, count in losses_count.items():
-            if count == 0:
-                zero_lose.append(player)
-            if count == 1:
-                one_lose.append(player)
-        
-        return [sorted(zero_lose), sorted(one_lose)]
+        pass
 
 
 

@@ -21,10 +21,13 @@ class Solution:
 				# not enough letters in parent set to satisfy subset
 				return False
 
-		
 		# if for every key in subset there is a key in orig_set with a value greater than or equal
 		# to the value in subset
 		return True
+
+
+
+
 
 ransom_note = "a"
 magazine = "b"
