@@ -1,7 +1,22 @@
-class Solution:
-    def numIdenticalPairs(self, nums: [int]) -> int:
-        pass
+import math
 
+class Solution:
+    def combination(self, n, r):
+        if n >= r:
+            return math.factorial(n) / (math.factorial(r) * math.factorial(n - r))
+        return 0
+
+    def numIdenticalPairs(self, nums: [int]) -> int:
+        # Create a dictionary where keys are unique integers and values are lists of their indices
+        # *COPIED FROM GPT*
+        dic = {value: [i for i, x in enumerate(nums) if x == value] for value in set(nums)}
+
+        # set up a combination to determine the numebr of ways to order the values
+        counter = 0
+        for index_array in dic.values():
+            counter += self.combination(len(index_array), 2)
+
+        return int(counter)
 
 
 
