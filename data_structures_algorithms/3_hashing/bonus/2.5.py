@@ -11,6 +11,8 @@ class Solution:
         # *COPIED FROM GPT*
         dic = {value: [i for i, x in enumerate(nums) if x == value] for value in set(nums)}
 
+        return list(dic.values())
+
         # set up a combination to determine the numebr of ways to order the values
         counter = 0
         for index_array in dic.values():
