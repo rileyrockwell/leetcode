@@ -1,0 +1,15 @@
+### Linked Lists						11/07 | 10:00
+# GPT
+
+
+
+### Fast and Slow Pointers
+
+
+### Reversing a Linked List II
+
+
+### Linked List Quiz
+
+
+### Bonus Problems, Linked Lists
