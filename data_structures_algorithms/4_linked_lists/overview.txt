@@ -1,5 +1,17 @@
 ### Linked Lists						11/07 | 10:00
-# GPT
+
+[] advantages and disadvantages compared to arrays
+[] mechanics of a linked list
+-assignment
+-chaining (.next)
+-traversal
+
+[] types of linked lists
+-singly linked list
+-doubly linked list
+-linked lists with sentinel nodes
+-dummy pointers
+
 
 
 
