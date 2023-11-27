@@ -1,66 +1,55 @@
-class ListNode:
-    def __init__(self, val):
-        self.val = val
-        self.next = None
-
-
-    def get_sum1(self, head):
-        ans = 0
-        while head:
-            ans += head.val
-            head = head.next
-
-        return ans
-
-    def get_sum(self, head):
-        if not head:
-            return 0
-
-        return head.val + self.get_sum(head.next)
-    
-one = ListNode(1)
-two = ListNode(2)
-three = ListNode(3)
-one.next = two
-two.next = three
-head = one
-
-print("###")
-print(two.get_sum(one))
-
-
 class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
+	def __init__(self, data):
+		# what type of data structure is data?
+		self.data = data
+		# is next applicable for both a singly and doubly linked list?
+		self.next = None
 
+# Singly linked list
 class LinkedList:
-    def __init__(self):
-        self.head = None
+	def __init__(self):
+		# will None get replace with a value?
+		self.head = None
 
-    def append(self, data):
-        new_node = Node(data)
-        if not self.head:
-            self.head = new_node
-        else:
-            current = self.head
-            while current.next:
-                current = current.next
-            current.next = new_node
+	# adding a node to the linked list?
+	def append(self, data):
+		# where data is which type of data structure (int, float, str, tuple, list, dict, set)?
+		new_node = Node(data)
 
-    def display(self):
-        current = self.head
-        while current:
-            print(current.data, end=" -> ")
-            current = current.next
-        print("None")
+		# what Boolean does self.head yield?
+		if not self.head:
+			# if not the head of the linked list, then create the head of the linked list
+			self.head = new_node
 
-# Example usage
-my_linked_list = LinkedList()
-my_linked_list.append(1)
-my_linked_list.append(2)
-my_linked_list.append(3)
-# my_linked_list.display()
+		# opposite of the Boolean disclosed earlier | the head of the linked list already exists
+		else:
+			
+			# what is current in this context? | current node | why define the current node as the head node?
+			current = self.head
+			
+			# while current.next == True | when does current.next get initialized | w/ "None" for each instance of Node?
+			while current.next:
+			
+				# move to the next node?
+				current = current.next
+			
+			# why create a new node
+			current.next = new_node
+
+	def display(self):
+		current = self.head
+		while current:
+			print(current.data, end = " -> ")
+			current = current.next
+
+		print("None")
 
 
+my_list = LinkedList()
 
+my_list.append(1)
+my_list.append(2)
+my_list.display()
+
+my_list.append(3)
+my_list.display()

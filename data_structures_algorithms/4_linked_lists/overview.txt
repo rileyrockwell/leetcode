@@ -1,27 +1,35 @@
 ### Linked Lists						11/07 | 10:00
-
-[] advantages and disadvantages compared to arrays
-[] mechanics of a linked list
--assignment
--chaining (.next)
--traversal
-
-[] types of linked lists
--singly linked list
--doubly linked list
--linked lists with sentinel nodes
--dummy pointers
+										11/15 | 00:00-02:15: 0.10
+										11/15 | 
 
 
+-custom class to define the node object (e.g. ListNode)
+-generally want to keep a reference to the head (b/c only node to reach all elements in the LL)
+
+## advantages and disadvantages compared to arrays
+-primary adv: can add or remove element in any position in O(1), req. reference node
+-primary dis adv: no random access; must iterate (could require O(n) to access an element)
+-adv: LL do not have fixed sizes
+-dynamic array is resized when size exceeded (expensive); LL do not suffer from this, but have more overhead
+
+## mechanics of a linked list
+-underlying concept of handling pointers is fundamental
+
+# assignment
+-when assinging pointer to an existing LL node, pointer referes to object in memory.
 
 
-### Fast and Slow Pointers
+# chaining (.next)
+# traversal
 
 
-### Reversing a Linked List II
+## types of linked lists
+# singly linked list
+# doubly linked list
+# linked lists with sentinel nodes
 
+# dummy pointers
 
-### Linked List Quiz
-
-
-### Bonus Problems, Linked Lists
+###
+-the point of a LL problem is usually to manipulate pointers in a clean way using O(1) space.
+-LL patterns...
