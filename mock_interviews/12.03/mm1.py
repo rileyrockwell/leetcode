@@ -1,0 +1,3 @@
+"""
+https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/description/
+"""
