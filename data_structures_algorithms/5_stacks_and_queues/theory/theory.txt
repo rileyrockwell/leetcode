@@ -1,0 +1,9 @@
+Stacks:
+-characteristic that makes something a stack i that you can only add and remove elements from the same end.
+-stack: abstract interface
+-stack wrt recursion: explain
+-def (active call): explain
+-LIFO pattern: components of the problem that involves elements in the input interacting w/ each other.
+
+# string problems
+-stack are useful for string matching b/c it saves a "history" of the previous characters.

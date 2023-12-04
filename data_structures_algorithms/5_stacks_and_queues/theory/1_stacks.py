@@ -1,1 +1,0 @@
-print("you will prevail! i see it in you. it's all w/in you. don't look for external things. look for internal things and you will grow your mind, your skillset, your energy.")
