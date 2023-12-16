@@ -1,13 +1,13 @@
 class Solution:
     def numJewelsInStones(self, jewels: str, stones: str) -> int:
-    	jewels = list(jewels)
+        jewels = list(jewels)
 
-    	counter = 0
-    	for element in stones:
-    		if element in jewels:
-    			counter += 1
+        counter = 0
+        for element in stones:
+            if element in jewels:
+                counter += 1
 
-    	return counter
+        return counter
 
 jewels = "aA"
 stones = "aAAbbbb"

@@ -5,7 +5,6 @@ class Solution:
         result = 0
         respective_lengths = 0
 
-
         # sliding window / two pointers
 
         left, right = 0, 1
