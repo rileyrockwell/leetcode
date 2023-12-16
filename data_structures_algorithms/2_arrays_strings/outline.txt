@@ -1,0 +1,46 @@
+1. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/703/arraystrings/4592/
+
+2. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/703/arraystrings/4689/
+
+3. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/703/arraystrings/4594/.
+
+4. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/703/arraystrings/4595/
+
+5. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/703/arraystrings/4658/
+
+6. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/703/arraystrings/4657/
+
+7. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/703/arraystrings/4836/
+
+
+# TWO POINTERS
+1. reverse string
+2. squares of a sorted array
+
+# SLIDING WINDOW
+3. max avg subarray i
+4. max consecutive ones iii
+
+# PREFIX SUM
+5. running sum of 1d array
+6. min value to get positive step by step sum
+7. k radius subarray averages
+
+
+### BONUS ###
+
+# TWO POINTERS
+1. reverse words in a string iii
+2. reverse only letters
+3. move zeroes
+4. reverse prefix of word
+
+# SLIDING WINDOW
+5. min size subarray sum
+6. max number of vowels in a substring of given length
+7. get equal substrings within budget
+
+# PREFIX SUM
+8. find the highest altitude
+9. find pivot index
+10. range sum query - immutatble

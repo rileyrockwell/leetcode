@@ -1,0 +1,59 @@
+1. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4601/
+
+2. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4602/
+
+3. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4661/
+
+4. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4606/
+
+5. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4662/
+
+6. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4663/
+
+7. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4845/
+
+8. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4607/
+
+9. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4664/
+
+10. https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4690/
+
+# CHECKING FOR EXISTENCE
+1. check if the sentence is pangram
+2. missing number
+3. counting elements
+
+# COUNTING
+4. find players with zero or one losses
+5. largest unique number
+6. max number of balloons
+7. contigous array
+
+# MORE HASHING EXAMPLES
+8. ransom note
+9. jewels and stones
+10. longest without repeating characters
+
+
+### BONUS ###
+
+# CHECKING FOR EXISTENCE
+1. contains duplicate
+2. destination city
+3. path crossing
+
+# COUNTING
+4. sum of unique elements
+5. find lucky integer in an array
+6. unique number of occurences
+7. sort characters by frequency
+8. number of good pairs
+9. binary subarray with sum
+10. maximum erasure value
+11. permutation in string
+
+# GENERAL
+12. isomorphic strings
+13. word pattern
+14. custom sort string
+15. determine if two strings are close
