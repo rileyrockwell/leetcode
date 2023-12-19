@@ -25,11 +25,6 @@ class Solution:
         return max_subset_length
 
 
-    def lengthOfLongestSubstring(self, s):
-        pass
-
-
-
 
 s = "abcabcbb"
 s = "bbbbb"
