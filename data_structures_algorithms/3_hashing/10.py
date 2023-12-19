@@ -1,3 +1,5 @@
+# https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4690/
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         # building a seperate substring 
@@ -23,6 +25,13 @@ class Solution:
         return max_subset_length
 
 
+    def lengthOfLongestSubstring(self, s):
+        pass
 
-s = "abcdaefdcs"
+
+
+
+s = "abcabcbb"
+s = "bbbbb"
+s = "pwwkew"
 print(Solution().lengthOfLongestSubstring(s))
