@@ -8,7 +8,7 @@ class Solution:
         slow = head
         fast = head
 
-        # while the current pointer of next or the pointer after that, is not Null (i.e. exists)
+        # while the current pointer of next or the pointer after that is not Null
         while fast and fast.next:
             # slow pointer increases by 1 node
             slow = slow.next

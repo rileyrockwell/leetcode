@@ -1,81 +1,59 @@
-class ListNode:
-    def __init__(self, val):
-        self.val = val
+class Node:
+    def __init__(self, data):
+        self.data = data
         self.next = None
-    
-one = ListNode(1)
-two = ListNode(2)
-three = ListNode(3)
-one.next = two
-two.next = three
-head = one
 
-print(head.val)
-print(head.next.val)
-print(head.next.next.val)
+class LinkedList:
+    def __init__(self):
+        self.head = None
 
+    def is_empty(self):
+        return self.head is None
 
-### REVIEW ###
+    def append(self, data):
+        new_node = Node(data)
+        if self.is_empty():
+            self.head = new_node
+        else:
+            current = self.head
+            while current.next:
+                current = current.next
+            current.next = new_node
 
-class ListNode:
-    def __init__(self, val):
-        self.val = val
-        self.next = None
-        self.prev = None
+    def prepend(self, data):
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
 
-def add_to_end(node_to_add):
-    node_to_add.next = tail
-    node_to_add.prev = tail.prev
-    tail.prev.next = node_to_add
-    tail.prev = node_to_add
+    def delete(self, data):
+        if self.is_empty():
+            return
 
-def remove_from_end():
-    if head.next == tail:
-        return
+        if self.head.data == data:
+            self.head = self.head.next
+            return
 
-    node_to_remove = tail.prev
-    node_to_remove.prev.next = tail
-    tail.prev = node_to_remove.prev
+        current = self.head
+        while current.next and current.next.data != data:
+            current = current.next
 
-def add_to_start(node_to_add):
-    node_to_add.prev = head
-    node_to_add.next = head.next
-    head.next.prev = node_to_add
-    head.next = node_to_add
+        if current.next:
+            current.next = current.next.next
 
-def remove_from_start():
-    if head.next == tail:
-        return
-    
-    node_to_remove = head.next
-    node_to_remove.next.prev = head
-    head.next = node_to_remove.next
+    def display(self):
+        current = self.head
+        while current:
+            print(current.data, end=" -> ")
+            current = current.next
+        print("None")
 
-head = ListNode(None)
-tail = ListNode(None)
-head.next = tail
-tail.prev = head
+# Example Usage:
+linked_list = LinkedList()
+linked_list.append(1)
+linked_list.append(2)
+linked_list.append(3)
+linked_list.prepend(0)
+linked_list.display()  # Output: 0 -> 1 -> 2 -> 3 -> None
 
-
-### EXAMPLES FOR EXERCISES ###
-def get_middle(head):
-    slow = head
-    fast = head
-    while fast and fast.next:
-        slow = slow.next
-        fast = fast.next.next
-    
-    return slow.val
-
-
-def find_node(head, k):
-    slow = head
-    fast = head
-    for _ in range(k):
-        fast = fast.next
-    
-    while fast:
-        slow = slow.next
-        fast = fast.next
-    
-    return slow
+linked_list.delete(2)
+linked_list.display()  # Output: 0 -> 1 -> 3 -> None
