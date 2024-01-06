@@ -18,6 +18,8 @@ class Solution:
 
 		
 
+		
+
 
 head = ListNode(0)
 print(Solution().deleteMiddle(head))
