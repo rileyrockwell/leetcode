@@ -9,7 +9,7 @@ class ListNode:
 
 class Solution:
 	def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
-		return "testing new"
+		return 1
 
 
 head = ListNode(0)
