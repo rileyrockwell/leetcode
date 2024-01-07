@@ -3,8 +3,21 @@ class ListNode:
 		self.val = val
 		self.next = next
 
+	# let prev_node be the node at position i - 1
+	def addNode(self, prev_node, node_to_add):
+		node_to_add.next = prev_node.next
+		prev_node.next = node_to_add
+
+		return 
+
+	# let prev_node be the node at position i - 1
+	def deleteNode(self, prev_node):
+		prev_node.next = prev_node.next.next
+		
+		return 
+
 class LinkedList:
-	# traversal
+	# traversaL
 	def getSum(self, head):
 		ans = 0
 		while head:
@@ -20,21 +33,18 @@ class LinkedList:
 
 		return head.val + self.getSum(head.next)
 
-	# let prev_node be the node at position i - 1
-	def addNode(self, prev_node, node_to_add):
-		node_to_add.next = prev_node.next
-		prev_node.next = node_to_add
 
-	# let prev_node be the node at position i - 1
-	def deleteNode(self, prev_node):
-		prev_node.next = prev_node.next.next
-		
+# head = ListNode(0)
+# head.next = ListNode(1)
+# head.next.next = ListNode(2)
 
-head = ListNode(0)
-head.next = ListNode(1)
-head.next.next = ListNode(2)
+# head = ListNode(0)
+# head.addNode(ListNode(0), ListNode(1)) # b/c you need a reference node (i.e. 0)
+# head.addNode(ListNode(1), ListNode(2))
 
-print(LinkedList().getSum(head))
+# print(head.next.val)
+
+# print(LinkedList().getSum(head))
 
 
 
@@ -59,10 +69,10 @@ class LinkedList:
 	# let node be the node at position i
 	def deleteNode(self, node):
 		prev_node = self.node.prev
-		next_node = self.node.next
+		next = self.node.next
 
-		prev_node.next = next_node
-		next_node.prev = prev_node
+		prev_node.next = next
+		next.prev = prev_node
 
 	def addToEnd(node_to_add):
 	    node_to_add.next = tail
@@ -112,3 +122,67 @@ class LinkedList:
 # Write your code here
 # Try creating 1 <-> 2 <-> 3
 # Test with print()
+
+
+### GPT ###
+class Node:
+    def __init__(self, data=None):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def is_empty(self):
+        return self.head is None
+
+    def append(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+        last_node = self.head
+        while last_node.next:
+            last_node = last_node.next
+        last_node.next = new_node
+
+    def prepend(self, data):
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+
+    def delete(self, data):
+        if self.head is None:
+            return
+
+        if self.head.data == data:
+            self.head = self.head.next
+            return
+
+        current_node = self.head
+        while current_node.next and current_node.next.data != data:
+            current_node = current_node.next
+
+        if current_node.next:
+            current_node.next = current_node.next.next
+
+    def display(self):
+        elements = []
+        current_node = self.head
+        while current_node:
+            elements.append(current_node.data)
+            current_node = current_node.next
+        print(" -> ".join(map(str, elements)))
+
+
+# Example usage:
+linked_list = LinkedList()
+linked_list.append(1)
+linked_list.append(2)
+linked_list.append(3)
+linked_list.prepend(0)
+linked_list.display()  # Output: 0 -> 1 -> 2 -> 3
+
+linked_list.delete(3)
+linked_list.display()  # Output: 0 -> 1 -> 3
